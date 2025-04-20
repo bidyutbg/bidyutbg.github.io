@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -8,23 +7,25 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,600,900" rel="stylesheet">
 
   <style>
-
     body {
         font-family: "Source Code Pro", monospace;
         font-size: 22px;
         color: rgba(0,0,255,1);
         font-weight: 400;
         line-height: 1.4;
+        background-color: #f4f8ff;
+        margin: 0;
+        padding: 0;
     }
     #container {
-      padding: 10px;
-      /*max-width: 960px;*/
+      padding: 20px;
+      max-width: 960px;
+      margin: auto;
     }
     a {
         background: white;
         color: blue;
         text-decoration: none;
-        /*padding: 0px 8px 3px;*/
         border-radius: 2px;
         border-bottom: 1px solid blue;
         transition: .4s all;
@@ -42,48 +43,52 @@
       margin-top: 0;
       margin-bottom: 0;
     }
-
+    header, footer {
+      text-align: center;
+      padding: 10px;
+      font-weight: bold;
+    }
+    .section-title {
+      font-weight: 600;
+      margin-top: 40px;
+    }
   </style>
 
 </head>
 <body>
   <div id="container">
-    <section class="top">
-      ==============
-      <br>
-      Bidyut Bikash Goswami, PhD
-      <br>
-      <br>
-      <div class="bio">
-        Researcher at <a target="_blank" href="https://ista.ac.at/en/home/">Institute of Science and Technology Austria (ISTA)</a>. Post-doc at <a target="_blank" href="https://ist.ac.at/en/research/muller-group/">Muller Group</a>. 
-<!--         Researcher at <a target="_blank" href="https://ista.ac.at/en/home/">Institute of Science and Technology Austria (ISTA)</a>. Post-doc at <a target="_blank" href="https://ist.ac.at/en/research/muller-group/">Muller Group</a>. Used to teach at <a target="_blank" href="https://www.pratt.edu/pratt-research-and-centers/spatial-analysis-visualization-initiative/">Pratt</a>, <a target="_blank" href="http://journalismdesign.com/">New School</a>, <a target="_blank" href="https://generalassemb.ly/instructors/larry-buchanan/1222">GA</a>, <a target="_blank" href="http://mediaschool.indiana.edu/">Indiana University</a>. <a target="_blank" href="http://adcyoungguns.org/profiles/larry-buchanan">ADC Young Gun</a>. Used to make stuff for <a target="_blank" href="http://projects.newyorker.com/story/subway/">The New Yorker</a>. And <a target="_blank" href="https://www.mcsweeneys.net/authors/larry-buchanan">McSweeney’s</a>. <a href="http://twitter.com/larrybuch" target="_blank">Twitter</a>. <a href="mailto:larrybuch@gmail.com">Email</a>. I also take a photo every day at 3:45 p.m. and post it <a href="https://www.instagram.com/larryat345/">here</a>.  -->
-        <br>
-<!--         <br>
-        Site archive: <a href="http://larrybuch.com/2013/">2013</a> | <a href="http://cargocollective.com/larrybuch/">2011</a> | <a href="http://larrybuch.com/2007/">2007</a>
-        <br>
-        <br> -->
-        If you have any queries about my research or for any possible collaboration, please <a href="mailto:bgoswami@ist.ac.at">email me</a>.
-      </div>
-    </section>
+    <header>
+      <h1>Bidyut Bikash Goswami, PhD</h1>
+      <p>Atmospheric Scientist | Climate Modeler | Educator</p>
+    </header>
 
-    <br>
-    <br>
-    <br>
-    
-    ==================================
-    <br>
+    <section class="bio">
+      <p>Researcher at <a target="_blank" href="https://ista.ac.at/en/home/">Institute of Science and Technology Austria (ISTA)</a> and Post-doc at the <a target="_blank" href="https://ist.ac.at/en/research/muller-group/">Muller Group</a>.</p>
+      <p>I study the dynamics of tropical convection, land-ocean heterogeneity, and climate variability using models such as CESM, SAM, and CFS, combined with large-scale datasets like ERA5 and TRMM. I’ve conducted research at ISTA, and collaborated with scientists across institutions including the University of Alaska Fairbanks.</p>
+      <p>I've taught graduate courses, mentored doctoral researchers, and conducted short courses on Python at <a href="https://www.egu.eu/">EGU</a>. I also have experience with high-performance computing systems such as Prithvi, Nestor, Cedar, Dalma, and ISTA-HPC.</p>
+      <p>For collaborations or questions, please <a href="mailto:bgoswami@ist.ac.at">email me</a>.</p>
+    </section>
 
     <section id="links">
-      <div>This is the <a href="https://scholar.google.com/citations?hl=en&user=vcY2SdQAAAAJ&view_op=list_works&sortby=pubdate">list of my publications</a>.</div>
-      <br>
-
+      <div class="section-title">Resources & Links</div>
+      <ul>
+        <li><a href="https://scholar.google.com/citations?hl=en&user=vcY2SdQAAAAJ&view_op=list_works&sortby=pubdate">Google Scholar – Publications</a></li>
+        <li><a href="https://github.com/bidyutbg">GitHub – Projects & Code</a></li>
+        <li><a href="https://www.linkedin.com/in/bidyutbg/">LinkedIn – Professional Profile</a></li>
+        <li><a href="/cv/BidyutBG_CV.pdf">Download My CV (PDF)</a></li>
+      </ul>
     </section>
+
+    <section id="updates">
+      <div class="section-title">Recent Highlights</div>
+      <ul>
+        <li>Presented a Python short course at <strong>EGU 2025</strong>.</li>
+      </ul>
+    </section>
+
+    <footer>
+      &copy; 2025 Bidyut Bikash Goswami
+    </footer>
   </div>
-
-
-  <script src="js/tabletop.js"></script>
-  <script src="js/d3.v3.min.js"></script>
-  <script src="js/script.js"></script>
-
 </body>
 </html>
