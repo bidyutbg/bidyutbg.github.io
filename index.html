@@ -1,89 +1,103 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Bidyut Bikash Goswami</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,600,900" rel="stylesheet">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+  <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
   <style>
-
     body {
-        font-family: "Source Code Pro", monospace;
-        font-size: 22px;
-        color: rgba(0,0,255,1);
-        font-weight: 400;
-        line-height: 1.4;
+      font-family: "Open Sans", sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      color: #333;
+      line-height: 1.6;
     }
-    #container {
-      padding: 10px;
-      /*max-width: 960px;*/
-    }
-    a {
-        background: white;
-        color: blue;
-        text-decoration: none;
-        /*padding: 0px 8px 3px;*/
-        border-radius: 2px;
-        border-bottom: 1px solid blue;
-        transition: .4s all;
-    }
-    a:hover {
-        background-color: cyan;
-        color: blue;
-    }
-    span.date {
-      margin-right: 11px;
-    }
-    #links p {
-      text-indent: -117px;
-      margin-left: 117px;
-      margin-top: 0;
+    h1 {
       margin-bottom: 0;
     }
-
+    .subtitle {
+      margin-top: 0;
+      font-size: 1.2em;
+      color: #666;
+    }
+    .profile {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+    .profile img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 10px;
+      background-color: #ccc;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .icon-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-right: 15px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
   </style>
-
 </head>
 <body>
-  <div id="container">
-    <section class="top">
-      ==============
-      <br>
-      Bidyut Bikash Goswami, PhD
-      <br>
-      <br>
-      <div class="bio">
-        Researcher at <a target="_blank" href="https://ista.ac.at/en/home/">Institute of Science and Technology Austria (ISTA)</a>. Post-doc at <a target="_blank" href="https://ist.ac.at/en/research/muller-group/">Muller Group</a>. 
-<!--         Researcher at <a target="_blank" href="https://ista.ac.at/en/home/">Institute of Science and Technology Austria (ISTA)</a>. Post-doc at <a target="_blank" href="https://ist.ac.at/en/research/muller-group/">Muller Group</a>. Used to teach at <a target="_blank" href="https://www.pratt.edu/pratt-research-and-centers/spatial-analysis-visualization-initiative/">Pratt</a>, <a target="_blank" href="http://journalismdesign.com/">New School</a>, <a target="_blank" href="https://generalassemb.ly/instructors/larry-buchanan/1222">GA</a>, <a target="_blank" href="http://mediaschool.indiana.edu/">Indiana University</a>. <a target="_blank" href="http://adcyoungguns.org/profiles/larry-buchanan">ADC Young Gun</a>. Used to make stuff for <a target="_blank" href="http://projects.newyorker.com/story/subway/">The New Yorker</a>. And <a target="_blank" href="https://www.mcsweeneys.net/authors/larry-buchanan">McSweeney’s</a>. <a href="http://twitter.com/larrybuch" target="_blank">Twitter</a>. <a href="mailto:larrybuch@gmail.com">Email</a>. I also take a photo every day at 3:45 p.m. and post it <a href="https://www.instagram.com/larryat345/">here</a>.  -->
-        <br>
-<!--         <br>
-        Site archive: <a href="http://larrybuch.com/2013/">2013</a> | <a href="http://cargocollective.com/larrybuch/">2011</a> | <a href="http://larrybuch.com/2007/">2007</a>
-        <br>
-        <br> -->
-        If you have any queries about my research or for any possible collaboration, please <a href="mailto:bgoswami@ist.ac.at">email me</a>.
-      </div>
-    </section>
 
-    <br>
-    <br>
-    <br>
-    
-    ==================================
-    <br>
-
-    <section id="links">
-      <div>This is the <a href="https://scholar.google.com/citations?hl=en&user=vcY2SdQAAAAJ&view_op=list_works&sortby=pubdate">list of my publications</a>.</div>
-      <br>
-
-    </section>
+  <div class="profile">
+    <img src="https://via.placeholder.com/140" alt="Bidyut Goswami">
+    <div>
+      <h1>Bidyut Bikash Goswami</h1>
+      <p class="subtitle">Postdoctoral Researcher<br>
+      Institute of Science and Technology Austria (ISTA)</p>
+      <p>
+        <a class="icon-link" href="mailto:bgoswami@ist.ac.at">
+          <iconify-icon icon="mdi:email-outline"></iconify-icon>Email
+        </a>
+        <a class="icon-link" href="https://github.com/bidyutbg" target="_blank">
+          <iconify-icon icon="mdi:github"></iconify-icon>GitHub
+        </a>
+        <a class="icon-link" href="https://scholar.google.com/citations?user=vcY2SdQAAAAJ" target="_blank">
+          <iconify-icon icon="academicons:google-scholar"></iconify-icon>Scholar
+        </a>
+        <a class="icon-link" href="#" target="_blank">
+          <iconify-icon icon="mdi:file-account-outline"></iconify-icon>CV
+        </a>
+      </p>
+    </div>
   </div>
 
+  <section>
+    <h2>Research Interests</h2>
+    <p>
+      My research focuses on understanding atmospheric dynamics and variability, and their response to warming, with an emphasis on the role of atmospheric convection, its organization, and the subsequent dynamic interactions. To this end, I perform experiments using a hierarchy of models. In my research, the Indian summer monsoon is an elemental component.
+    </p>
+  </section>
 
-  <script src="js/tabletop.js"></script>
-  <script src="js/d3.v3.min.js"></script>
-  <script src="js/script.js"></script>
+  <section>
+    <h2>Publications</h2>
+    <p>
+      Please see my <a href="https://scholar.google.com/citations?user=vcY2SdQAAAAJ" target="_blank">Google Scholar profile</a> for a full list of my publications.
+    </p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:bgoswami@ist.ac.at">bgoswami@ist.ac.at</a></p>
+    <p>Institute of Science and Technology Austria (ISTA)</p>
+  </section>
 
 </body>
 </html>
