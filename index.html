@@ -4,11 +4,9 @@
   <meta charset="UTF-8">
   <title>Bidyut Bikash Goswami</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <!-- Fonts & Icons -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
   <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
-
   <style>
     body {
       margin: 0;
@@ -17,7 +15,6 @@
       color: #333;
       line-height: 1.6;
     }
-
     .cover {
       width: 100%;
       height: 300px;
@@ -25,13 +22,11 @@
       background-size: cover;
       background-position: center;
     }
-
     .container {
       max-width: 800px;
       margin: auto;
       padding: 20px;
     }
-
     .profile {
       display: flex;
       align-items: center;
@@ -43,7 +38,6 @@
       border-radius: 8px;
       flex-wrap: wrap; /* ensures wrapping on mobile */
     }
-
     .profile img {
       width: 140px;
       height: 140px;
@@ -52,24 +46,20 @@
       background-color: #ccc;
       flex-shrink: 0;
     }
-
     .name-title {
       margin: 0;
     }
-
     .subtitle {
       margin-top: 4px;
       font-size: 1.2em;
       color: #666;
     }
-
     .links {
       margin-top: 10px;
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
     }
-
     .links a {
       color: #0066cc;
       text-decoration: none;
@@ -78,83 +68,177 @@
       gap: 6px;
       font-size: 0.95em;
     }
-
     .links a:hover {
       text-decoration: underline;
     }
-
     section {
       margin-top: 40px;
     }
-
     h2 {
       margin-bottom: 10px;
     }
 
-    /* --- Responsive styles --- */
+    /* --- Showcase row (3 frames) --- */
+    .showcase {
+      display: flex;
+      gap: 16px;
+      align-items: stretch;
+    }
+    .frame {
+      flex: 1 1 0;
+      min-width: 0;
+      background: white;
+      border: 1px solid #e6e6e6;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: inherit;
+      transition: box-shadow 0.2s ease, transform 0.2s ease;
+    }
+    .frame:hover {
+      box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+      transform: translateY(-2px);
+    }
+    .frame-tagline {
+      font-weight: 600;
+      font-size: 0.98em;
+      margin: 0 0 4px 0;
+      color: #222;
+    }
+    .frame-sub {
+      font-size: 0.82em;
+      color: #888;
+      margin: 0 0 12px 0;
+    }
+    .scroll-frame {
+      width: 140px;
+      height: 140px;
+      margin: 0 auto;
+      border-radius: 4px;
+      overflow: hidden;
+      position: relative;
+      background-color: #ddd;
+    }
+    .scroll-track {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      animation: scrollY 14s linear infinite;
+    }
+    .scroll-frame:hover .scroll-track {
+      animation-play-state: paused;
+    }
+    .scroll-track img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      display: block;
+    }
+    @keyframes scrollY {
+      0%   { transform: translateY(0); }
+      100% { transform: translateY(-50%); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .scroll-track {
+        animation: none;
+      }
+    }
     @media (max-width: 600px) {
-      .cover {
-        height: 200px;
-      }
-
-      .profile {
+      .showcase {
         flex-direction: column;
-        align-items: center;
-        margin-top: -40px;
-        text-align: center;
-      }
-
-      .profile img {
-        width: 120px;
-        height: 120px;
-      }
-
-      .links {
-        justify-content: center;
       }
     }
   </style>
 </head>
 <body>
-
   <div class="cover"></div>
-
   <div class="container">
-
     <div class="profile">
       <img src="1541788042007.jpeg" alt="Bidyut Goswami">
       <div>
         <h1 class="name-title">Bidyut Bikash Goswami</h1>
         <p class="subtitle">Postdoctoral Research Fellow<br>University of Exeter, UK</p>
         <div class="links">
-          <a href="mailto:B.Goswami2@exeter.ac.uk"><iconify-icon icon="mdi:email-outline"></iconify-icon> Email</a>
-          <a href="https://github.com/bidyutbg" target="_blank"><iconify-icon icon="mdi:github"></iconify-icon> GitHub</a>
-          <a href="https://scholar.google.com/citations?user=vcY2SdQAAAAJ" target="_blank"><iconify-icon icon="academicons:google-scholar"></iconify-icon> Scholar</a>
           <a href="CV_Bidyut.pdf" target="_blank"><iconify-icon icon="mdi:file-account-outline"></iconify-icon> CV</a>
+          <a href="https://scholar.google.com/citations?user=vcY2SdQAAAAJ" target="_blank"><iconify-icon icon="academicons:google-scholar"></iconify-icon> Scholar</a>
+          <a href="https://github.com/bidyutbg" target="_blank"><iconify-icon icon="mdi:github"></iconify-icon> GitHub</a>
+          <a href="outreach.html"><iconify-icon icon="mdi:bullhorn-outline"></iconify-icon> Outreach</a>
+          <a href="teaching.html"><iconify-icon icon="mdi:school-outline"></iconify-icon> Teaching</a>
+          <a href="mailto:B.Goswami2@exeter.ac.uk"><iconify-icon icon="mdi:email-outline"></iconify-icon> Email</a>
+          <a href="other.html"><iconify-icon icon="mdi:dots-horizontal-circle-outline"></iconify-icon> Other</a>
         </div>
       </div>
     </div>
-
     <section>
       <h2>Research Interests</h2>
       <p>
         The Indian summer monsoon is a central component of my research, which focuses on understanding atmospheric dynamics and variability, and their response to warming, with particular emphasis on atmospheric convection, its organisation, and the resulting dynamical interactions. To address these, I use a hierarchy of models.
       </p>
     </section>
-
     <section>
-      <h2>Publications</h2>
-      <p>
-        Please see my <a href="https://scholar.google.com/citations?user=vcY2SdQAAAAJ" target="_blank">Google Scholar profile</a> for a full list of my publications.
-      </p>
-    </section>
+      <h2>Beyond the papers</h2>
+      <div class="showcase">
 
+        <!-- Frame 1: Outreach (CDWF) -->
+        <a class="frame" href="https://cdwf-clima.github.io/" target="_blank" rel="noopener">
+          <p class="frame-tagline">"one conversation at a time"</p>
+          <p class="frame-sub">Climate Dialogues: Way Forward</p>
+          <div class="scroll-frame">
+            <div class="scroll-track">
+              <img src="https://img.youtube.com/vi/oe_9QUkxJDI/hqdefault.jpg" alt="CDWF session">
+              <img src="https://img.youtube.com/vi/qKxcsanWfZc/hqdefault.jpg" alt="CDWF session">
+              <img src="https://img.youtube.com/vi/ooqKCNq8yvs/hqdefault.jpg" alt="CDWF session">
+              <img src="https://img.youtube.com/vi/oe_9QUkxJDI/hqdefault.jpg" alt="CDWF session">
+              <img src="https://img.youtube.com/vi/qKxcsanWfZc/hqdefault.jpg" alt="CDWF session">
+              <img src="https://img.youtube.com/vi/ooqKCNq8yvs/hqdefault.jpg" alt="CDWF session">
+            </div>
+          </div>
+        </a>
+
+        <!-- Frame 2: Photography -->
+        <a class="frame" href="https://500px.com/p/bidyutbikashgoswami?view=photos" target="_blank" rel="noopener">
+          <p class="frame-tagline">my photos</p>
+          <p class="frame-sub">500px portfolio</p>
+          <div class="scroll-frame">
+            <div class="scroll-track">
+              <img src="photos/photo1.jpg" alt="Photograph by Bidyut Goswami" onerror="this.src='https://placehold.co/140x140/2b2b2b/eee?text=Photo+1'">
+              <img src="photos/photo2.jpg" alt="Photograph by Bidyut Goswami" onerror="this.src='https://placehold.co/140x140/3a3a3a/eee?text=Photo+2'">
+              <img src="photos/photo3.jpg" alt="Photograph by Bidyut Goswami" onerror="this.src='https://placehold.co/140x140/494949/eee?text=Photo+3'">
+              <img src="photos/photo1.jpg" alt="Photograph by Bidyut Goswami" onerror="this.src='https://placehold.co/140x140/2b2b2b/eee?text=Photo+1'">
+              <img src="photos/photo2.jpg" alt="Photograph by Bidyut Goswami" onerror="this.src='https://placehold.co/140x140/3a3a3a/eee?text=Photo+2'">
+              <img src="photos/photo3.jpg" alt="Photograph by Bidyut Goswami" onerror="this.src='https://placehold.co/140x140/494949/eee?text=Photo+3'">
+            </div>
+          </div>
+        </a>
+
+        <!-- Frame 3: Poetry -->
+        <a class="frame" href="https://bgzone.home.blog/" target="_blank" rel="noopener">
+          <p class="frame-tagline">my poetry</p>
+          <p class="frame-sub">Open Eyed Dreamz</p>
+          <div class="scroll-frame">
+            <div class="scroll-track">
+              <img src="https://bgzone.home.blog/wp-content/uploads/2022/07/climate_poetry_2.png?w=200&h=200&crop=1" alt="Poetry of Climate Change">
+              <img src="https://i0.wp.com/bgzone.home.blog/wp-content/uploads/2022/02/screen-shot-2022-02-20-at-1.30.15-am-edited.png?resize=200%2C200&ssl=1" alt="गुलदस्ता">
+              <img src="https://i0.wp.com/bgzone.home.blog/wp-content/uploads/2021/04/img_4163.jpg?resize=200%2C200&ssl=1" alt="एतिमाद">
+              <img src="https://bgzone.home.blog/wp-content/uploads/2022/07/climate_poetry_2.png?w=200&h=200&crop=1" alt="Poetry of Climate Change">
+              <img src="https://i0.wp.com/bgzone.home.blog/wp-content/uploads/2022/02/screen-shot-2022-02-20-at-1.30.15-am-edited.png?resize=200%2C200&ssl=1" alt="गुलदस्ता">
+              <img src="https://i0.wp.com/bgzone.home.blog/wp-content/uploads/2021/04/img_4163.jpg?resize=200%2C200&ssl=1" alt="एतिमाद">
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </section>
     <section>
       <h2>Contact</h2>
       <p>Email: <a href="mailto:B.Goswami2@exeter.ac.uk">B.Goswami2@exeter.ac.uk</a></p>
       <p>Department of Mathematics and Statistics<br>Laver Building<br>University of Exeter<br>Exeter EX4 4QE<br>United Kingdom</p>
     </section>
-
   </div>
 </body>
 </html>
